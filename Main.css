@@ -1,7 +1,4 @@
-
 /*Header*/
-
-
 header{
     width: 100%;
     overflow: hidden;
@@ -9,7 +6,7 @@ header{
     margin-bottom: 20px;
 }
 .wrapper{
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -31,7 +28,7 @@ header nav .active{
     display: inline-block;
     color:#e5e7eb ;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 40px;
     font-weight: bold;
     -webkit-transition: all 500ms ease;
@@ -41,8 +38,10 @@ header nav .active{
 
 header nav a:hover{
     background:#1f2937; ;
-    border-radius: 50px;
+    border-radius: 70px;
 }
+
+/*FOOTER*/
 
 .footer{
     position: fixed;
@@ -52,4 +51,60 @@ header nav a:hover{
     background:#1f2937;
     color:#f9faf8 ;
     text-align: center;
+}
+
+/*BUTTON*/
+.btn{
+    background-color: #3882f6;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+/*quote*/
+
+.blockquote{
+    max-width: 600px;
+    margin: 10px 20px ;
+    padding: 25px;
+    background:#e5e7eb;
+    border: 1px solid #c7c9cf;
+    color: #1f2937;
+
+}
+
+.img,
+.img-row{
+    max-width: 300px;
+}
+
+/*ROW*/
+
+.column{
+    float: right;
+    width: auto;
+    padding: 5px;
+    
+
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    border: #3882f6;
+}
+
+.subtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-row{
+    border-color: #3882f6 solid;
 }
